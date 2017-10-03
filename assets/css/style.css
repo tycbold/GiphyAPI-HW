@@ -1,0 +1,30 @@
+.sitcom {
+	margin: 5px;
+	border: none;
+	border-radius: 15px;
+	background-color: firebrick;
+	color: white;
+	padding: 7px 15px;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	box-shadow: 3px 3px 2px grey;
+}
+
+
+#add-sitcom {
+	margin-top: 10px;
+}
+
+#sitcom-form{
+	margin: 10px;
+}
+
+p {
+	margin: 15px;
+	font-family: Helvetica, sans-serif;
+}
+
+.image {
+	float: left;
+	margin: 20px;
+}
