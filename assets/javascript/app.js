@@ -1,9 +1,9 @@
 // Sitcom array
 
 var topics = ["The Office", "Roseanne", "Parks and Recreation", 
-"The Cosby Show", "Bewitched", "That '70s Show", "The Fresh Prince of Bel-Air",
-"Will and Grace", "Seinfeld", "Friends", "30 Rock", "Home Improvement",
-"How I Met Your Mother", "I Love Lucy", "Frasier", "Community"];
+"The Cosby Show", "Bewitched", "That '70s Show", "Seinfeld", 
+"The Fresh Prince of Bel-Air", "Will and Grace", "Friends", "30 Rock", "Home Improvement",
+"Frasier", "How I Met Your Mother", "I Love Lucy", "Community"];
 
 // Render initial buttons function
 
@@ -14,7 +14,7 @@ function renderButtons() {
 	for (var i = 0; i < topics.length; i++) {
 
 		var addButton = $("<button>");
-		addButton.addClass("sitcom");
+		addButton.addClass("sitcom btn");
 		addButton.attr("data-name", topics[i]);
 		addButton.text(topics[i]);
 		$("#sitcom-buttons").append(addButton);
@@ -40,11 +40,14 @@ function generateGifs() {
 			var results = response.data;
 
 			for (var i = 0; i < results.length; i++) {
+
+				console.log(response);
+
 				var gifDiv = $("<div class='image'>");
 
 				var rating = results[i].rating;
 
-				var p = $("<p>").text("Rating: " + rating.toUpperCase());
+				var p = $("<p>").html("Rating: " + "<span class='rating'>" + rating.toUpperCase() + "</span>");
 
 				var sitcomImage = $("<img>");
 				sitcomImage.addClass("gif")
@@ -58,7 +61,7 @@ function generateGifs() {
 
 				$("#gifs-appear-here").prepend(gifDiv);
 			}
-			gifClicked();
+			gifClicked ();
 		});
 	});
 }

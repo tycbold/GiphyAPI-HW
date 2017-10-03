@@ -1,8 +1,21 @@
+body {
+	background: url("../images/vertical-waves.png");
+}
+
+p {
+	margin: 15px;
+	font-family: Helvetica, sans-serif;
+}
+
+.container {
+	margin: 10px;
+}
+
 .sitcom {
 	margin: 5px;
 	border: none;
 	border-radius: 15px;
-	background-color: firebrick;
+	background-color: mediumslateblue;
 	color: white;
 	padding: 7px 15px;
 	font-family: Verdana, sans-serif;
@@ -13,18 +26,29 @@
 
 #add-sitcom {
 	margin-top: 10px;
+	font-size: 14px;
+		font-family: Verdana, sans-serif;
+
 }
 
 #sitcom-form{
 	margin: 10px;
 }
 
-p {
-	margin: 15px;
-	font-family: Helvetica, sans-serif;
-}
-
 .image {
 	float: left;
 	margin: 20px;
 }
+
+.rating {
+	font-family: "Gotham Bold";
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.gif {
+	height: 150px;
+}
+
+
+
