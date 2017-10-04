@@ -7,6 +7,12 @@ p {
 	font-family: Helvetica, sans-serif;
 }
 
+label {
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 10px;
+}
+
 .container {
 	margin: 10px;
 }
